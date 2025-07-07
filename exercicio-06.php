@@ -14,7 +14,6 @@
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         if(isset($_POST['verificar_divisor'])){
             $numero = $_POST['numero_divisor'];
-            $divisor = 0;
             for($i = 1; $i < $numero; $i++){
                 if($numero % $i === 0){
                     echo "O número $i é divisor de $numero<br>\n";
