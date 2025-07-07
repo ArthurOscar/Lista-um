@@ -11,7 +11,7 @@
         <button type="submit" name="verificar_sinal">Verificar</button>
     </form>
     <?php
-    if($_SERVER['REQUEST_METHOD'] = 'POST'){
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
         if(isset($_POST['verificar_sinal'])){
             $numero = $_POST['numero_sinal'];
             if($numero < 0){
